@@ -48,7 +48,7 @@ export default function App() {
   return (
     <div className="relative ">
       <Cursor />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16 lg:py-0">
+      <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-16 lg:py-0">
         <ThemeToggle />
         <div className="lg:flex lg:justify-between lg:gap-4">
           {/* Left Sidebar */}

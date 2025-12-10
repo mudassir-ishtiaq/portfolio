@@ -7,3 +7,85 @@ html {
   font-family: "Inter Variable", sans-serif;
   scroll-behavior: smooth;
 }
+.cursor {
+  position: relative;
+  border-right: 2px solid var(--cursor-color, rgba(255, 255, 255, 0.75));
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typewriter-animation {
+  /*
+    Only the typewriter animation is needed.
+    Duration is 5s (1s delay + 4s typing).
+    It uses a custom property to manage the blink alongside width.
+  */
+  animation: typewriter 5s infinite normal both;
+}
+
+/* -------------------------------------- */
+/* 3. Combined Keyframes (Typewriter + Blinking) */
+/* -------------------------------------- */
+@keyframes typewriter {
+  /* --- PAUSE/RESET PERIOD (0% to 20%) --- */
+  /* 0% to 19%: 1s wait/reset period. Cursor is invisible. */
+  0%,
+  19% {
+    width: 0;
+    border-right-color: transparent;
+  }
+
+  /* --- TYPING PERIOD (20% to 100%) --- */
+  /* 20% is the start of the 4s typing action (1s/5s = 20%). */
+  20% {
+    width: 0;
+  }
+
+  /* 20% to 100%: Typing action (width expands) + Cursor blinks */
+  /* The steps(30) in the animation rule handles the width expansion. */
+
+  /* Blinking is controlled by the border-right-color here */
+  20%,
+  25%,
+  30%,
+  35%,
+  40%,
+  45%,
+  50%,
+  55%,
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95%,
+  100% {
+    border-right-color: var(--cursor-color, rgba(255, 255, 255, 0.75));
+  }
+
+  /* Make the cursor transparent in between the visible flashes */
+  22.5%,
+  27.5%,
+  32.5%,
+  37.5%,
+  42.5%,
+  47.5%,
+  52.5%,
+  57.5%,
+  62.5%,
+  67.5%,
+  72.5%,
+  77.5%,
+  82.5%,
+  87.5%,
+  92.5%,
+  97.5% {
+    border-right-color: transparent;
+  }
+
+  /* Ensure final width is 100% */
+  100% {
+    width: 100%;
+  }
+}

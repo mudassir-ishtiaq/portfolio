@@ -1,13 +1,18 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Navbar from "../utilities/Navbar";
+import { useTheme } from "../../context/ThemeContext.jsx";
+import TypewriterText from "../utilities/TypewriterText.jsx";
+
 export default function Profile({ profile }) {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
         <div>
           <h1 className="text-4xl font-bold tracking-tight dark:text-slate-400 sm:text-5xl">
-            <a href="/">{profile.first_name}</a>
+            <TypewriterText text={profile.first_name} />
           </h1>
 
           <h2 className="mt-3 text-lg font-medium tracking-tight dark:text-slate-400 sm:text-xl">
