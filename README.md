@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built with **React**, **Tailwind
 
 ## 🔗 Demo
 
-**[View Live Site](https://krishnaprasadp.netlify.app/)**
+**[View Live Site](https://krishnap.is-a.dev/)**
 
 ---
 
@@ -27,16 +27,15 @@ A modern, responsive personal portfolio website built with **React**, **Tailwind
 
 ## 🚀 Technologies Used
 
-| Category               | Technology                    | Purpose                                        |
-| :--------------------- | :---------------------------- | :--------------------------------------------- |
-| **Frontend Framework** | **React**                     | Building the user interface.                   |
-| **Build Tool**         | **Vite**                      | Fast development server and production build.  |
-| **Styling**            | **Tailwind CSS**              | Utility-first CSS framework for rapid styling. |
-| **Animations**         | **Framer Motion**             | Declarative animation library for React.       |
-| **Icons**              | **Lucide React, React Icons** | Vector icons for UI elements.                  |
-| **Deployment**         | **Netlify**                   | Continuous deployment and hosting.             |
-| **Design**             | **Figma**                     | Initial UI/UX design.                          |
-| **Font**               | **Inter**                     | Modern and legible typeface.                   |
+| Category               | Technology       | Purpose                                        |
+| :--------------------- | :--------------- | :--------------------------------------------- |
+| **Frontend Framework** | **React**        | Building the user interface.                   |
+| **Build Tool**         | **Vite**         | Fast development server and production build.  |
+| **Styling**            | **Tailwind CSS** | Utility-first CSS framework for rapid styling. |
+| **Icons**              | **React Icons**  | Vector icons for UI elements.                  |
+| **Deployment**         | **Netlify**      | Continuous deployment and hosting.             |
+| **Design**             | **Figma**        | Initial UI/UX design.                          |
+| **Font**               | **Inter**        | Modern and legible typeface.                   |
 
 ---
 
